@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffb6b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.logo span {
+    color: #fff1f1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Ícones no topo */
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.icons i {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.carrinho {
+    position: relative;
+}
+.contador {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: white;
+    color: #ff5c5c;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produto h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.preco {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff5c5c;
+}
+
+/* Botões */
+.botoes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.comprar {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s;
+}
+.comprar:hover {
+    background-color: #e94a4a;
+}
+
+.favoritar {
+    background-color: transparent;
+    border: 2px solid #ff5c5c;
+    color: #ff5c5c;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.favoritar:hover {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffb6b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer h3 {
+    margin-bottom: 10px;
+}
+footer p {
+    margin: 5px 0;
+}
